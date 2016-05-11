@@ -5,7 +5,9 @@
 <%= for five <- @fives do %>
   <div>
     <span>
-      <strong><%= five.name %></strong>
+      <strong>
+	    <%= link five.name, to: five_path(@conn, :show, five) %>
+      </strong>
       <small> on <%= five.inserted_at %></small>
     </span>
     <p><%= five.comment %></p>

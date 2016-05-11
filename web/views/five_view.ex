@@ -5,9 +5,9 @@ defmodule Hello.FiveView do
   	count = Hello.Five.count
 
   	case count do
-  		{0} ->
+  		0 ->
   			"No fives yet, be the first one!"
-  		{1} ->
+  		1 ->
   			"Just one five :-("
   		_ ->
   			"We have #{count} fives!"

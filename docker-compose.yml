@@ -3,6 +3,7 @@ version: '2'
 services:
   db:
     image: postgres:9.4
+    container_name: hello_phoenix_db
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASS: postgres
@@ -14,8 +15,8 @@ services:
 
   app:
     build: .
+    container_name: hello_phoenix_app
     image: slawekkolodziej/hello-phoenix
-    working_dir: /app
     ports:
       - "4000:4000"
     volumes:

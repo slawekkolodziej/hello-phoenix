@@ -14,5 +14,4 @@
 
 </ul>
 
-<%= link "Edit", to: five_path(@conn, :edit, @five) %>
 <%= link "Back", to: five_path(@conn, :index) %>
