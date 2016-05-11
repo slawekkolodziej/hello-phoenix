@@ -1,0 +1,13 @@
+<%= link "Give more!", to: five_path(@conn, :new), class: "btn btn-primary" %>
+
+<h2><%= fives_header %></h2>
+
+<%= for five <- @fives do %>
+  <div>
+    <span>
+      <strong><%= five.name %></strong>
+      <small> on <%= five.inserted_at %></small>
+    </span>
+    <p><%= five.comment %></p>
+  </div>
+<% end %>

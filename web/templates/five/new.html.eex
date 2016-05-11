@@ -1,0 +1,6 @@
+<h2>New five</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: five_path(@conn, :create) %>
+
+<%= link "Go back", to: five_path(@conn, :index) %>
